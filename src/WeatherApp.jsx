@@ -1,12 +1,13 @@
 import './WeatherApp.css'
 import { useState } from 'react'
+import { API_KEY } from './config.js'; // Asegúrate de que la ruta sea correcta
 export const WeatherApp = () => {
 
     const [city, setCity] = useState('')
     const [weatherData, setWeatherData] = useState(null)
 
     const urlBase = 'https://api.openweathermap.org/data/2.5/weather'
-    const API_KEY = '605507acf87117e111e54a3ab5238541'
+    API_KEY 
     const difKelvin = 275.15
 
     const fetchWheaterData = async () => {
